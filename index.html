@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax and Api</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="css/fontawesome-all.css"> -->
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <h2>Weather Widget</h2>
+
+    <!-- <p id="textbox">something here</p> -->
+    <button id="btn">Click to update</button>
+
+    <div class="container widget">
+        <h2 class="text-center">Weather<span></span> </h2> 
+        <div class="row">
+            <div class="col-sm-4 col-xs-6">
+                <h4><span id="temp" >N/A</span>° F</h4>
+                <p>Lagos Nigeria</p>
+            </div>
+            <div class="col-sm-3 col-xs-0 num mt-4">
+                <i class="fa fa-cloud"></i>
+            </div>
+            <div class="col-sm-5 col-xs-6">
+                <p>Wind: <span id="windspd">N/A</span> kph( <span id='windDir'>N/A</span>°)</p>
+                <p>Humidity: <span id="humidity">N/A</span> %</p>
+                <p>Summary: <span id="summary">N/A</span> </p>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
