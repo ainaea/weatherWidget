@@ -26,13 +26,13 @@ btn.addEventListener('click', serverCall);
 // }
 
 function serverCall() {
-    fetch('http://api.openweathermap.org/data/2.5/weather?q=Lagos&appid=0949a2d7150315e6b0cf4932317c8064')
+    fetch('https://api.openweathermap.org/data/2.5/weather?q=Lagos&appid=0949a2d7150315e6b0cf4932317c8064')
 	.then(response => response.json())
 	.then(data => {
 		// document.getElementById('para').innerHTML = "JSON.stringify(data)";
         console.log(data);
         // change text content using txtContent('summary', 'not groovy');
-        txtContent('temp', data.main.temp);
+        txtContent('temp', (data.main.temp - 273).toFixed(2));
         txtContent('windspd', data.wind.speed);
         txtContent('windDir', data.wind.deg);
         txtContent('humidity', data.main.humidity);
